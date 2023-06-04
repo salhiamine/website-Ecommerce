@@ -1,59 +1,121 @@
+.desktop1-container {
+width: 100%;
+display: flex;
+overflow: auto;
+min-height: 100vh;
+align-items: center;
+flex-direction: column;
+}
 
-.button {
-  color: var(--dl-color-gray-black);
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  border-color: var(--dl-color-gray-black);
-  border-width: 1px;
-  border-radius: 4px;
-  background-color: var(--dl-color-gray-white);
+.desktop1-desktop1 {
+width: 100%;
+height: 1024px;
+display: flex;
+overflow: hidden;
+position: relative;
+align-items: flex-start;
+flex-shrink: 0;
+background-color: rgb(255, 0, 0);
 }
-.input {
-  color: var(--dl-color-gray-black);
-  cursor: auto;
-  padding: 0.5rem 1rem;
-  border-color: var(--dl-color-gray-black);
-  border-width: 1px;
-  border-radius: 4px;
-  background-color: var(--dl-color-gray-white);
+
+.desktop1-rittangolosottile {
+top: 0px;
+left: 822px;
+width: 582px;
+height: 1024px;
+position: absolute;
 }
-.textarea {
-  color: var(--dl-color-gray-black);
-  cursor: auto;
-  padding: 0.5rem;
-  border-color: var(--dl-color-gray-black);
-  border-width: 1px;
-  border-radius: 4px;
-  background-color: var(--dl-color-gray-white);
+
+.desktop1-immaginorologio {
+top: -31px;
+left: 843px;
+width: 538px;
+height: 1086px;
+position: absolute;
 }
-.list {
-  width: 100%;
-  margin: 1em 0px 1em 0px;
-  display: block;
-  padding: 0px 0px 0px 1.5rem;
-  list-style-type: none;
-  list-style-position: outside;
+
+.desktop1-text {
+top: 374px;
+left: 60px;
+color: rgba(255, 255, 255, 1);
+width: 773px;
+height: auto;
+position: absolute;
+font-size: 100px;
+font-style: italic;
+text-align: left;
+font-family: Poppins;
+font-weight: 900;
+line-height: 105.50000667572021%;
+font-stretch: normal;
+text-decoration: none;
 }
-.list-item {
-  display: list-item;
+
+.desktop1-text01 {
+color: rgba(255, 255, 255, 1);
 }
-.teleport-show {
-  display: flex !important;
-  transform: none !important;
+
+.desktop1-text06 {
+top: 42px;
+left: 31px;
+color: rgba(255, 255, 255, 1);
+width: 582px;
+height: auto;
+position: absolute;
+font-size: 24px;
+font-style: Regular;
+text-align: left;
+font-family: Anton;
+font-weight: 400;
+line-height: 105.50000667572021%;s
+font-stretch: normal;
+text-decoration: none;
 }
-.Content {
-  font-size: 16px;
-  font-family: Inter;
-  font-weight: 400;
-  line-height: 1.15;
-  text-transform: none;
-  text-decoration: none;
+
+.desktop1-rettangolosottileshopnow {
+top: 624px;
+left: 363px;
+width: 398px;
+height: 87px;
+position: absolute;
+border-color: rgba(255, 255, 255, 1);
+border-radius: 40px;
 }
-.Heading {
-  font-size: 32px;
-  font-family: Inter;
-  font-weight: 700;
-  line-height: 1.15;
-  text-transform: none;
-  text-decoration: none;
+
+.desktop1-text08 {
+top: 651px;
+left: 430px;
+color: rgba(255, 255, 255, 1);
+width: 199px;
+height: auto;
+position: absolute;
+font-size: 32px;
+font-style: italic;
+text-align: left;s
+font-family: Poppins;
+font-weight: 900;
+line-height: 105.50000667572021%;
+font-stretch: normal;
+text-decoration: none;
+}
+
+/* Stili per dispositivi mobili */
+@media (max-width: 767px) {
+.desktop1-desktop1 {
+height: auto;
+}
+
+.desktop1-rittangolosottile,
+.desktop1-immaginorologio {
+position: static;
+width: 100%;
+height: auto;
+}
+
+.desktop1-text {
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 36px;
+text-align: center;
 }
